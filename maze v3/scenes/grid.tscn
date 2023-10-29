@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b003c4hvpryod"]
+
+[ext_resource type="Script" path="res://scripts/GridMap.gd" id="1_7qhsg"]
+[ext_resource type="MeshLibrary" uid="uid://dqf7bkap8trp0" path="res://tileset/maze_tileset.tres" id="1_l1fyy"]
+
+[node name="grid" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_l1fyy")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+script = ExtResource("1_7qhsg")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.620765, 0, -0.783997, 0, 1, 0, 0.783997, 0, -0.620765, 0, 1, 0)

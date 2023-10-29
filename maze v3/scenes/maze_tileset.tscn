@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnylwu4dlb6xe"]
+
+[ext_resource type="PackedScene" uid="uid://dsgehdyea2sa2" path="res://tileset/maze-tileset.glb" id="1_rmnh1"]
+
+[node name="maze-tileset" instance=ExtResource("1_rmnh1")]

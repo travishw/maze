@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://1qgnyqaxxpwn"]
+
+[ext_resource type="Texture2D" uid="uid://b2u1mrwt4htm3" path="res://Sprite-0001.png" id="1_7takh"]
+[ext_resource type="Script" path="res://TileMap.gd" id="2_xds57"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b4r7f"]
+texture = ExtResource("1_7takh")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+4:0/size_in_atlas = Vector2i(2, 2)
+4:0/0 = 0
+6:0/size_in_atlas = Vector2i(2, 2)
+6:0/0 = 0
+8:0/size_in_atlas = Vector2i(2, 2)
+8:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_00fmg"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_b4r7f")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_00fmg")
+format = 2
+script = ExtResource("2_xds57")
